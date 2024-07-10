@@ -1,0 +1,819 @@
+@media (max-width: 1024px) {
+    .top-cat{
+        display: none;
+    }
+    .header{
+        width: 100%;
+    }
+    .header .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+       justify-content: center;
+       gap: 10px;
+       width: 100%;
+    }
+    .achive{
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        margin: 0px auto;
+        padding: 0px auto;
+    }
+    .achive .achv-card{
+        margin-top: 10px;
+    }
+    
+    .resources .res_cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .banner_img img{
+        width: 100%;
+    }
+    .services .ser_cards{
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
+    .award img{
+        width: 100%;
+    }
+    .itprocess img{
+        width: 100%;
+    }
+    .ser-cat .ser-images{
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px 80px; 
+    }
+    .footer-sec{
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        position: relative;
+       
+    }
+    .top-cat{
+        display: none;
+    }
+    .header{
+        display: flex;
+        background-color: blueviolet;
+        height: 40px;
+        /* display: block; */
+        /* width: 100%; */
+        /* padding: 0px 30px; */
+    }
+    .header-responsive{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .menu-bar svg{
+        fill: white;
+        
+    }
+    .header .navbar{
+        display: none;
+        
+    }
+    .responsive-navbar{
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        left: -800px;
+        transition: left 1s ease;
+    }
+    .close-btn{
+        position: absolute;
+        top: 10px;
+        left: 740px;
+        color: white;
+        font-size: 20px;
+    }
+    .responsive-navbar.open{
+        left: 0px;
+        transition: left 1s ease;
+    }
+    .responsive-navbar.remove{
+        left: -800px;
+        transition: left 1s ease;
+    }
+    .responsive-navbar .res-navbar{
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        justify-content: left;
+        gap: 10px;
+        overflow: hidden;
+        background-color: #1c1ca5;
+        font-family: Arial;
+        width: 100%;
+        padding: 10px 0px 15px 10px;
+    }
+    .res-navbar .about {
+        font-size: x-large;
+      }
+      
+      .res-navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 0px 16px;
+        text-decoration: none;
+      }
+    .achive.container{
+        max-width: 0px;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30px auto;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    .achive{
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .achive .achv-card{
+        width: 600px;
+        height: 100px;
+    }
+    .hero-para{
+        width: 80%;
+    }
+    .hero-para p{
+        text-align: center;
+        font-size: large;
+    }
+    .resources.container{
+        max-width: 0px;
+        width: 100%;
+    }
+    
+    /* .resources{
+        width: 100%;
+    }
+    .resources p{
+       width: 100%;
+    }
+    .resources p{
+        font-size: x-large;
+        text-align: center;
+        font: bold;
+    } */
+    .resources .res_cards{
+        max-width: 0px;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30px auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .resources .res_cards .res-card{
+        width: 600px;
+    }
+    .banner_img.container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .banner_img{
+        width: 100%; 
+        margin: 30px auto; 
+    }
+    .banner_img img{
+        width: 80%;
+    }
+    .services.container{
+        width: 100%;
+        
+    }
+    .services{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .services .ser_cards{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .services .ser_cards .ser-card{
+        width: 600px;
+    }
+    .award{
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .award img{
+        width: 600px;
+    }
+    .award h2{
+       width: 600px;
+    }
+    .award p{
+        width: 600px;
+    }
+    .talent_hunt img {
+        width: 80%; 
+    }
+    
+    .ser-cat .ser-images{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px 80px; 
+    }
+    .awards{
+        width: 100%;
+        margin: 0px auto;
+        align-items: center;
+    }
+    .awards .award-sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        justify-content: center;
+    }   
+    .newsimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+        width: 100%;
+    }
+    .newsimg a img{
+        width: 600px;
+    }
+    .product-items {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* margin-top: 20px; */
+        /* gap: 80px; */
+    }
+    .product-item {
+        max-width: 100%;
+        margin: 0 10px;
+        box-sizing: border-box;
+    }
+    .Testimonials{
+        max-width: 1000px;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* text-align: center; */
+        gap: 20px;
+        padding: 20px;
+    }
+    .testi-div{
+        max-width: 600px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+    .testi-div .crop-container {
+        width: 120px;  
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden; 
+        position: relative;
+    }
+    .testi-div .text{
+        justify-content:center;
+        text-align: center;
+        gap: 10px;
+    }
+    .tech-contan .tech-images{
+        grid-template-columns: 1fr;
+    }
+    .itprocess{
+        width: 100%;
+    }
+    .itprocess img{
+        width: 80%;
+    }
+    .ser-cat .ser-images{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 6px 80px; 
+    }
+    .footer-sec{
+        padding: 10px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        position: relative;
+       
+    }
+    .top-cat{
+        display: none;
+    }
+    .header{
+        display: flex;
+        background-color: blueviolet;
+        height: 40px;
+        /* display: block; */
+        /* width: 100%; */
+        /* padding: 0px 30px; */
+    }
+    .header-responsive{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .menu-bar svg{
+        fill: white;
+        
+    }
+    .header .navbar{
+        display: none;
+        
+    }
+    .responsive-navbar{
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 90px;
+        left: -800px;
+        transition: left 1s ease;
+    }
+    .close-btn{
+        position: absolute;
+        top: 10px;
+        left: 740px;
+        color: white;
+        font-size: 20px;
+    }
+    .responsive-navbar.open{
+        left: 0px;
+        transition: left 1s ease;
+    }
+    .responsive-navbar.remove{
+        left: -800px;
+        transition: left 1s ease;
+    }
+    .responsive-navbar .res-navbar{
+        display: flex;
+        flex-direction: column;
+        align-items:start;
+        justify-content: left;
+        gap: 10px;
+        overflow: hidden;
+        background-color: #1c1ca5;
+        font-family: Arial;
+        width: 100%;
+        padding: 10px 0px 15px 10px;
+    }
+    .res-navbar .about {
+        font-size: x-large;
+      }
+      
+      .res-navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 0px 16px;
+        text-decoration: none;
+      }
+
+    .tab-email{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0px;
+    }
+    .achive.container{
+        max-width: 0px;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30px auto;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 20px;
+    }
+    .achive{
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .achive .achv-card{
+        width: 600px;
+        height: 100px;
+    }
+    .hero-para{
+        width: 80%;
+    }
+    .hero-para p{
+        text-align: center;
+        font-size: large;
+    }
+    .resources.container{
+        max-width: 0px;
+        width: 100%;
+    }
+    
+    /* .resources{
+        width: 100%;
+    }
+    .resources p{
+       width: 100%;
+    }
+    .resources p{
+        font-size: x-large;
+        text-align: center;
+        font: bold;
+    } */
+    .resources .res_cards{
+        max-width: 0px;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30px auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .resources .res_cards .res-card{
+        width: 600px;
+    }
+    .banner_img.container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .banner_img{
+        width: 100%; 
+        margin: 30px auto; 
+    }
+    .banner_img img{
+        width: 80%;
+    }
+    .services.container{
+        width: 100%;
+        
+    }
+    .services{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .services .ser_cards{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .services .ser_cards .ser-card{
+        width: 600px;
+    }
+    .award{
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .award img{
+        width: 600px;
+    }
+    .award h2{
+       width: 600px;
+    }
+    .award p{
+        width: 600px;
+    }
+    .talent_hunt img {
+        width: 80%; 
+    }
+    
+    .ser-cat .ser-images{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px 80px; 
+    }
+    .awards{
+        width: 100%;
+        margin: 0px auto;
+        align-items: center;
+    }
+    .awards .award-sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        justify-content: center;
+    }   
+    .newsimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+        width: 100%;
+    }
+    .newsimg a img{
+        width: 600px;
+    }
+    .product-items {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* margin-top: 20px; */
+        /* gap: 80px; */
+    }
+    .product-item {
+        max-width: 100%;
+        margin: 0 10px;
+        box-sizing: border-box;
+    }
+    .Testimonials{
+        max-width: 1000px;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* text-align: center; */
+        gap: 20px;
+        padding: 20px;
+    }
+    .testi-div{
+        max-width: 600px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+    .testi-div .crop-container {
+        width: 120px;  
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden; 
+        position: relative;
+    }
+    .testi-div .text{
+        justify-content:center;
+        text-align: center;
+        gap: 10px;
+    }
+    .tech-contan .tech-images{
+        grid-template-columns: 1fr;
+    }
+    .itprocess{
+        width: 100%;
+    }
+    .itprocess img{
+        width: 80%;
+    }
+    .ser-cat .ser-images{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 6px 80px; 
+    }
+    .footer-sec{
+        padding: 10px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 470px) {
+    .top-cat{
+        display: none;
+    }
+    .header{
+        display: flex;
+        background-color: blueviolet;
+        height: 40px;
+    }
+    .header-responsive{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .menu-bar svg{
+        fill: white;
+    }
+    .header .navbar{
+        display: none;
+        
+    }
+    .achive.container{
+        max-width: 0px;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30px auto;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        padding: 0px 20px;
+    }
+    .achive{
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .achive .achv-card{
+        width: 350px;
+        height: 100px;
+        padding: 30px 0px;
+    }
+    .hero-para{
+        width: 80%;
+    }
+    .hero-para p{
+        text-align: center;
+        font-size: large;
+    }
+    .resources.container{
+        max-width: 0px;
+        width: 100%;
+    }
+    
+    .resources .res_cards{
+        max-width: 0px;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 30px auto;
+        align-items: center;
+        justify-content: center;
+    }
+    .resources .res_cards .res-card{
+        width: 350px;
+    }
+    .banner_img.container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .banner_img{
+        width: 100%; 
+        margin: 30px auto; 
+    }
+    .banner_img img{
+        width: 80%;
+    }
+    .services.container{
+        width: 100%;
+        
+    }
+    .services{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .services .ser_cards{
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .services .ser_cards .ser-card{
+        width: 350px;
+    }
+    .award{
+        width: 100%;
+        margin: 10px auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .award img{
+        width: 400px;
+    }
+    .award h2{
+        width: 400px;
+    }
+    .award p{
+        width: 400px;
+    }
+    .talent_hunt img {
+        width: 80%; 
+    }
+    
+    .ser-cat .ser-images{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6px 80px; 
+    }
+    .awards{
+        width: 100%;
+        margin: 0px auto;
+        align-items: center;
+    }
+    .awards .award-sec{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        justify-content: center;
+    }   
+    .newsimg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px auto;
+        width: 100%;
+    }
+    .newsimg a img{
+        width: 400px;
+    }
+    .product-items {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* margin-top: 20px; */
+        /* gap: 80px; */
+    }
+    .product-item {
+        max-width: 100%;
+        margin: 0 10px;
+        box-sizing: border-box;
+    }
+    .Testimonials{
+        max-width: 1000px;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* text-align: center; */
+        gap: 20px;
+        padding: 20px;
+    }
+    .testi-div{
+        max-width: 600px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+    .testi-div .crop-container {
+        width: 120px;  
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden; 
+        position: relative;
+    }
+    .testi-div .text{
+        justify-content:center;
+        text-align: center;
+        gap: 10px;
+    }
+    .tech-contan .tech-images{
+        grid-template-columns: 1fr;
+    }
+    .itprocess{
+        width: 100%;
+    }
+    .itprocess img{
+        width: 100%;
+    }
+    .ser-cat .ser-images{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 6px 80px; 
+    }
+    .footer-sec{
+        padding: 10px;
+    }
+    .footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
